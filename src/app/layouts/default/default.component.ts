@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-default',
   templateUrl: './default.component.html',
   styleUrls: ['./default.component.css']
 })
-export class DefaultComponent implements OnInit {
+export class DefaultComponent {
 
-  constructor() { }
+  sideBrOpen = false;
 
-  ngOnInit() {
+  sideBarTroggler() {
+    this.sideBrOpen = !this.sideBrOpen;
   }
-
 }

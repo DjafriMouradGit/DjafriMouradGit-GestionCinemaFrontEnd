@@ -1,1 +1,72 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+  <div class="profile-card">
+    <div class="header">
+      <h2>Mourad DJAFRI</h2>
+      <h4>djafrimourad.jobs@gmail.com</h4>
+    </div>
+    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
+  </div>
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Pages</h2>
+
+  <mat-list-item [matMenuTriggerFor]="ville">
+    <mat-icon>account_balance</mat-icon>
+    <a matline>Villes</a>
+  </mat-list-item>
+  <mat-menu #ville="matMenu">
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/">
+      <mat-icon>sort</mat-icon>
+      Liste des villes
+    </button>
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/posts">
+      <mat-icon>add_circle</mat-icon>
+      Ajouter une ville
+    </button>
+  </mat-menu>
+
+  <mat-list-item [matMenuTriggerFor]="cinema">
+    <mat-icon>shop</mat-icon>
+    <a matline>Cinémas</a>
+  </mat-list-item>
+  <mat-menu #cinema="matMenu">
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/">
+      <mat-icon>sort</mat-icon>
+      Liste des cinémas
+    </button>
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/posts">
+      <mat-icon>add_circle</mat-icon>
+      Ajouter un cinéma
+    </button>
+  </mat-menu>
+
+  <mat-list-item [matMenuTriggerFor]="salle">
+    <mat-icon>weekend</mat-icon>
+    <a matline>Salle</a>
+  </mat-list-item>
+  <mat-menu #salle="matMenu">
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/">
+      <mat-icon>sort</mat-icon>
+      Liste des salles
+    </button>
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/posts">
+      <mat-icon>add_circle</mat-icon>
+      Ajouter une salle
+    </button>
+  </mat-menu>
+
+  <mat-list-item [matMenuTriggerFor]="film">
+    <mat-icon>movie</mat-icon>
+    <a matline>Film</a>
+  </mat-list-item>
+  <mat-menu #film="matMenu">
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/">
+      <mat-icon>sort</mat-icon>
+      Liste des films
+    </button>
+    <button mat-menu-item routerLinkActive="list-item-active" routerLink="/posts">
+      <mat-icon>add_circle</mat-icon>
+      Ajouter un film
+    </button>
+  </mat-menu>
+</mat-nav-list>
+

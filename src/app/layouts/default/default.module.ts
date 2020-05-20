@@ -5,7 +5,7 @@ import {DashboardComponent} from '../../modules/dashboard/dashboard.component';
 import {RouterModule} from '@angular/router';
 import {PostsComponent} from '../../modules/posts/posts.component';
 import {SharedModule} from '../../shared/shared.module';
-import {MatSidenavModule} from '@angular/material';
+import {MatPaginatorModule, MatSidenavModule, MatTableModule} from '@angular/material';
 
 
 @NgModule({
@@ -19,6 +19,8 @@ import {MatSidenavModule} from '@angular/material';
     RouterModule,
     SharedModule,
     MatSidenavModule,
+    MatPaginatorModule,
+    MatTableModule
   ]
 })
 export class DefaultModule {
